@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 /**
  * Created by Administrator on 2019/5/30.
+ * 找出数组中任一重复的数字
  */
 public class Duplicate {
 
