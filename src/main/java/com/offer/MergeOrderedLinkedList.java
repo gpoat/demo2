@@ -9,7 +9,19 @@ public class MergeOrderedLinkedList {
 
     @Test
     public void test() {
-
+        Node node4 = new Node(4, null);
+        Node node3 = new Node(3, node4);
+        Node node2 = new Node(2, node3);
+        Node node1 = new Node(1, node2);
+        Node node8 = new Node(8, null);
+        Node node7 = new Node(7, node8);
+        Node node6 = new Node(6, node7);
+        Node node5 = new Node(5, node6);
+        Node mergedHeadNode =  mergerOrderedLinkedList(node1, node5);
+        while(mergedHeadNode != null) {
+            System.out.println(mergedHeadNode.val);
+            mergedHeadNode = mergedHeadNode.next;
+        }
     }
 
     /**
