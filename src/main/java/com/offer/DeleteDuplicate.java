@@ -13,6 +13,8 @@ public class DeleteDuplicate {
 
     }
 
+
+
     /**
      * 1 2 3 3 4 4 5
      * @param head
@@ -20,23 +22,23 @@ public class DeleteDuplicate {
      */
     private ListNode deleteDuplicate(ListNode head) {
 
-        if(head == null){
+        if(head == null) {
             return null;
         }
-        ListNode temp = head;
-        ListNode index = new ListNode();
-        index.next = temp;
-        ListNode result = index;
-        while(temp != null) {
-            if(temp.next != null && temp.data == temp.next.data) {
-                while(temp.next != null && temp.data == temp.next.data) {
-                    temp = temp.next;
+        ListNode node = head;
+        ListNode preNode = new ListNode();
+        preNode.next = node;
+        ListNode result = preNode;
+        while(node != null) {
+            if(node.next != null && node.data == node.next.data) {
+                while(node.next != null && node.data == node.next.data) {
+                    node = node.next;
                 }
-                temp = temp.next;
-                index.next = temp;
+                node = node.next;
+                preNode.next = node;
             } else {
-                index = index.next;
-                temp = temp.next;
+                preNode.next = node;
+                node = node.next;
             }
         }
         return result.next;
