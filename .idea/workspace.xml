@@ -4,7 +4,6 @@
     <list default="true" id="afab91ba-c427-40b3-a231-625db1e5424f" name="Default" comment="合并两个排序链表">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/offer/MoreThanHalfNum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/offer/DeleteDuplicate.java" afterPath="$PROJECT_DIR$/src/main/java/com/offer/DeleteDuplicate.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -823,7 +822,7 @@
       <workItem from="1559225752741" duration="5048000" />
       <workItem from="1559240293129" duration="8413000" />
       <workItem from="1559497886499" duration="16914000" />
-      <workItem from="1559578632788" duration="11605000" />
+      <workItem from="1559578632788" duration="11676000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1559170031838</created>
@@ -902,7 +901,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559579785241</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="删除链表重复元素修改变量名称">
+      <created>1559685453565</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559685453565</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -938,7 +944,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129279000" />
+    <option name="totallyTimeSpent" value="129350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1037,7 +1043,8 @@
     <MESSAGE value="增加数组工具类及交换方法" />
     <MESSAGE value="合并两个排序链表增加测试用例" />
     <MESSAGE value="打印字符串全排列" />
-    <option name="LAST_COMMIT_MESSAGE" value="打印字符串全排列" />
+    <MESSAGE value="删除链表重复元素修改变量名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除链表重复元素修改变量名称" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
