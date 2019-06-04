@@ -10,7 +10,16 @@ public class DeleteDuplicate {
 
     @Test
     public void test() {
-
+        Node node5 = new Node(5, null);
+        Node node4 = new Node(3, node5);
+        Node node3 = new Node(3, node4);
+        Node node2 = new Node(2, node3);
+        Node node1 = new Node(1, node2);
+        Node head = deleteDuplicate(node1);
+        while(head != null) {
+            System.out.println(head.val);
+            head = head.next;
+        }
     }
 
 
@@ -20,24 +29,24 @@ public class DeleteDuplicate {
      * @param head
      * @return
      */
-    private ListNode deleteDuplicate(ListNode head) {
+    private Node deleteDuplicate(Node head) {
 
         if(head == null) {
             return null;
         }
-        ListNode node = head;
-        ListNode preNode = new ListNode();
+        Node node = head;
+        Node preNode = new Node();
         preNode.next = node;
-        ListNode result = preNode;
+        Node result = preNode;
         while(node != null) {
-            if(node.next != null && node.data == node.next.data) {
-                while(node.next != null && node.data == node.next.data) {
+            if(node.next != null && node.val == node.next.val) {
+                while(node.next != null && node.val == node.next.val) {
                     node = node.next;
                 }
                 node = node.next;
                 preNode.next = node;
             } else {
-                preNode.next = node;
+                preNode = preNode.next;
                 node = node.next;
             }
         }
