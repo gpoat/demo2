@@ -16,5 +16,8 @@ public class GetLeastNumbers {
         if(nums == null || nums.length == 0) {
             return;
         }
+        while (true) {
+            break;
+        }
     }
 }
