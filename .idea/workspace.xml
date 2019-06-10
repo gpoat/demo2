@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afab91ba-c427-40b3-a231-625db1e5424f" name="Default" comment="合并排序链表增加迭代方式">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/offer/GetLeastNumbers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -44,8 +43,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="39">
+              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -915,7 +914,7 @@
       <workItem from="1559924719348" duration="12637000" />
       <workItem from="1560116933232" duration="2336000" />
       <workItem from="1560151014360" duration="14672000" />
-      <workItem from="1560201959327" duration="784000" />
+      <workItem from="1560201959327" duration="887000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1559170031838</created>
@@ -1050,7 +1049,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560201686568</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="增加ignore">
+      <created>1560202772673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1560202772673</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1086,7 +1092,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163855000" />
+    <option name="totallyTimeSpent" value="163958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="1" width="1932" height="1045" extended-state="0" />
@@ -1192,7 +1198,8 @@
     <MESSAGE value="合并排序链表增加迭代方式" />
     <MESSAGE value="增加字符串查找（暴力匹配、KMP）" />
     <MESSAGE value="删除.idea文件夹" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除.idea文件夹" />
+    <MESSAGE value="增加ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加ignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1614,8 +1621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="39">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding />
         </state>
       </provider>
