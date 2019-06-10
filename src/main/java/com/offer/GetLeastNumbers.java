@@ -14,7 +14,7 @@ public class GetLeastNumbers {
 
     private void getLeastNumbers(int [] nums, int k) {
         if(nums == null || nums.length == 0) {
-
+            return;
         }
     }
 }
