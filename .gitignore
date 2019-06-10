@@ -29,15 +29,5 @@ hs_err_pid*
 out/
 son/src/main/
 son/target/classes/
-src/main/java/com/sort/
-src/main/resources/
 src/test/
-target/classes/com/offer/GetLeastNumbers.class
-target/classes/com/offer/IsPopOrder.class
-target/classes/com/offer/MatchString.class
-target/classes/com/offer/MergeOrderedLinkedList.class
-target/classes/com/offer/MoreThanHalfNum.class
-target/classes/com/offer/Permutation.class
-target/classes/com/offer/ReverseList.class
-target/classes/com/offer/StackWithMin.class
 target/classes/com/offer/util/
