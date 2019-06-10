@@ -32,3 +32,5 @@ son/target/classes/
 src/test/
 target/classes/com/offer/util/
 
+src/main/java/com/sort/
+src/main/resources/
