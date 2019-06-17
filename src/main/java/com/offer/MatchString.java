@@ -12,10 +12,10 @@ public class MatchString {
 
     @Test
     public void test() {
-        System.out.println(violentMatch("AB CDED CDEF ABC", "DEF"));
+        System.out.println(violentMatch("AB CDED CDEF ABCFDffff", "DEF"));
         System.out.println(KMP("AB CDED CDEF ABC", "DEF"));
-        String target = "DABCDABDE";
-//        String target = "ABAB";
+//        String target = "DABABDED";
+        String target = "ABABCD";
         System.out.println(Arrays.toString(getNext(target)));
     }
 
@@ -41,7 +41,7 @@ public class MatchString {
                 i++;
                 j++;
             } else {
-                i = i - (j - 1);
+                i = i - j + 1;
                 j = 0;
             }
         }
@@ -83,18 +83,7 @@ public class MatchString {
         return -1;
     }
 
-    /**   p s
-     *    0 1
-     *  A B D A B C D  A B D G D A B C D  A B D E
-     *      D A B C D  A B D E
-     *     -1 0 0 0 0  1 2 3 1
-     *     -1 0 0 0 -1 0 0 3 1
-     * A B A B
-     * @param target
-     * @return
-     */
-    private int[] getNext(String target) {
-        char[] targetCharArray = target.toCharArray();
+    /*char[] targetCharArray = target.toCharArray();
         int[] next = new int[targetCharArray.length];
         next[0] = -1;
         int prefixIndex = -1;
@@ -110,6 +99,44 @@ public class MatchString {
                 prefixIndex = next[prefixIndex];
             }
         }
+        return next;*/
+    /**   p s
+     *    0 1
+     *  A B D A B C D  A B D G D A B C D  A B D E
+     *      D A B C D  A B D E
+     *     -1 0 0 0 0  1 2 3 1
+     *     -1 0 0 0 -1 0 0 3 1
+     *     D A B A B C
+     * A  B A B C D
+     * -1 1
+     * 0    2
+     *      1
+     * -1 0 0 1 2 0
+     * -1 0-1 0 -1 0
+     * a  b a b
+     * -1 0
+     * @param target
+     * @return
+     */
+    private int[] getNext(String target) {
+        int[] next = new int[target.length()];
+        next[0] = -1;
+        int prefix = -1;
+        int suffix = 0;
+        while(suffix < target.length() - 1) {
+            if(prefix == -1 || target.charAt(prefix) == target.charAt(suffix)) {
+                prefix++;
+                suffix++;
+                if(target.charAt(prefix) == target.charAt(suffix)) {
+                    next[suffix] = next[prefix];
+                } else {
+                    next[suffix] = prefix;
+                }
+            } else {
+                prefix = next[prefix];
+            }
+        }
+
         return next;
     }
 

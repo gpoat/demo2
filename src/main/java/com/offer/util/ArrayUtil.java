@@ -10,4 +10,10 @@ public class ArrayUtil {
         array[a] = array[b];
         array[b] = t;
     }
+
+    public static void swap(int[] array, int a, int b) {
+        int t = array[a];
+        array[a] = array[b];
+        array[b] = t;
+    }
 }
