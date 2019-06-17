@@ -2,9 +2,8 @@ package com.offer;
 
 import com.offer.util.ArrayUtil;
 import org.junit.Test;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -19,6 +18,7 @@ public class GetLeastNumbers {
 //        int[] numbers = {8,6,9,1,10,3};
         int[] numbers = {4,5,1,6,2,7,3,8};
         System.out.println(getLeastNumbers(numbers, 4));
+        System.out.println(getLeastNumbersWithHeap(numbers, 4));
     }
 
     private List<Integer> getLeastNumbers(int [] nums, int k) {
@@ -76,7 +76,23 @@ public class GetLeastNumbers {
         return highCursor;
     }
 
-
+    private ArrayList<Integer> getLeastNumbersWithHeap(int[] data, int k) {
+        if(data == null || data.length == 0 || k < 0 || k > data.length) {
+            return null;
+        }
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        for(int num : data) {
+            maxHeap.add(num);
+            if(maxHeap.size() > k) {
+                maxHeap.poll();
+            }
+        }
+        return new ArrayList<Integer>(maxHeap);
+    }
 
 
 }
