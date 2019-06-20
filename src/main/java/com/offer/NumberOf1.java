@@ -9,8 +9,7 @@ public class NumberOf1 {
 
     @Test
     public void test() {
-        System.out.println(9 & 8);
-        System.out.println(numberOf1Slow(9));
+        System.out.println(numberOf1Slow(10));
     }
 
     /**
@@ -23,6 +22,7 @@ public class NumberOf1 {
      * 1010
      * 1001
      * 1000
+     * 0111
      * @param number
      * @return
      */
