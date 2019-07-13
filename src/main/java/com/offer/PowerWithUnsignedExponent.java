@@ -44,10 +44,6 @@ public class PowerWithUnsignedExponent {
     }
 
     private boolean equals(double number1, double number2) {
-        if((number1 - number2 > -0.0000001) && number1 - number2 < 0.0000001) {
-            return true;
-        } else {
-            return false;
-        }
+        return number1 - number2 > -0.0000001 && number1 - number2 < 0.0000001;
     }
 }
